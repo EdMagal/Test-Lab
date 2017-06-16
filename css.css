@@ -1,7 +1,62 @@
 ul li {
-    display: inline;
-    color: red;
+  padding: 0px 4px 0px 4px;
+  display: inline; 
+  text-decoration: none;
+  color: #000;
+  opacity: .85;
 }
-p{
-    color: red;
+li:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+    color: black;
+}
+
+input {
+  margin: 10px;
+}
+
+.footer{
+  background-color: #EEE;
+  color: #222;
+  font-size: small;
+  height: 50px;  
+}
+
+.header{
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  text-align: right;
+}
+
+.left-footer{
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  left: -20px;
+  padding-right: 80px;
+  
+}
+
+.right-footer {
+  display: inline-block;
+  position: relative;
+  text-align: right;
+  padding-left: 80px
+}
+
+.search-tools{
+  text-align: center;
+}
+
+input {
+  width: 30%;
+  box-shadow: 1px 2px 1px #888888;
 }
