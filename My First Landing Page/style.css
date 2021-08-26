@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+   /*  border: 1px solid red; */
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("top-by-sean-stratton.jpg");
+    background-position:top;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+body * {
+    max-width: 1000px;
+}
+
+#title {
+    width: 100%;
+    position: relative;
+}
+
+#header-img {
+    display: block;
+    width: 100%;
+}
+
+#header-title {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: white;
+    font-family: 'Zen Tokyo Zoo';
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.orange {
+    color: gold;
+    font-family: fantasy;
+    font-size: 2.5em;
+    opacity: 0.8;
+}
+
+.orange::before {
+    content: "_";
+    opacity: 0;
+}
+
+.small-txt {
+    color: white;
+    font-size: 0.6em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(41, 19, 19, 0.6);
+} .small-txt a {
+    color: #AFA;
+}
+
+.pos-br {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+.card-img {
+    position: relative;  
+}
+
+.card-img img {
+    display: block;
+    width: 100%;
+}
+.card {
+    min-height: 200px;
+    padding: 1%;
+}
+
+.card-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5em;
+    font-size: 1.5m;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.watermark {
+    position:absolute;
+    font-size: 4em;
+    opacity: 0.8;
+    color: white;
+    font-family: 'Zen Tokyo Zoo', fantasy, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+}
+
+footer img {
+    height: 300px;
+    
+}
+
+#contact {
+    position:absolute;
+    font-size: 3em;
+    opacity: 0.9;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 30%;
+    left: 10%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#card1 {
+    background-color:rgb(209, 253, 191);
+    color: rgb(23, 49, 5);
+}
+
+#card2 {
+    background-color:rgb(190, 207, 211);
+    color: rgb(32, 25, 73);
+}
+
+#card3 {
+    background-color:rgb(204, 185, 160);
+    color: rgb(68, 51, 14);
+}
+
+#card4 {
+    background-color:rgb(254, 255, 190);
+    color: rgb(160, 72, 0);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+#footer-img {
+    display: block;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 667px) {
+    #header-title {
+        font-size: 5em;
+        line-height: 1em;
+    }
+    .orange {
+        font-size: 2em;
+        opacity: 0.8;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-text {
+        flex-shrink: 2;
+        line-height: 1em;
+        font-size: 1.4em;
+    }
+
+    .watermark {
+        position:absolute;
+        font-size: 3em;
+        opacity: 0.8;
+        color: white;
+        top: 20%;
+        left: 5%;
+
+    }
+
+    #card2, #card4 {
+        flex-direction: row-reverse;
+    }
+
+    #contact {
+        font-size: 4.5em;
+    }
+}
